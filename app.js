@@ -20,6 +20,11 @@ app.use("/",(req, res) => {
 
 const port = 1000;
 
+//sampel
+app.use('/hell', (req, res)=>{
+    res.send(`Hello world`);
+})
+
 app.listen(port, () =>{
     console.log("server started")
 })
